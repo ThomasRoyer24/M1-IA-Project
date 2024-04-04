@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Example - M1 Project</title>
+
+        <!-- CSS FILES -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/slick.css"/>
+
+        <link href="css/tooplate-little-fashion.css" rel="stylesheet">
+        
+<!--
+
+Tooplate 2127 Little Fashion
+
+https://www.tooplate.com/view/2127-little-fashion
+
+-->
+    </head>
+    
+    <body>
+
+        <section class="preloader">
+            <div class="spinner">
+                <span class="sk-inner-circle"></span>
+            </div>
+        </section>
+    
+        <main>
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                        <strong><span>M1</span> Project</strong>
+                    </a>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="federated-learning.html">Federated Learning</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="ocr.html">OCR</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="example.html">Example</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="faq.html">FAQs</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <header class="site-header section-padding-img site-header-image">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-12 header-info">
+                            <h1>
+                                <span class="d-block text-primary">Example</span>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+
+            <section id="link" class="front-product">
+                <div class="container-fluid p-0">
+                    <div class="row align-items-center">
+
+                        <div class="col-lg-6 col-12">
+                            <img src="images/demo/MnistExamples.png" class="img-fluid" alt="">
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                            <div class="px-5 py-5 py-lg-0">
+                                
+                                <h2 class="mb-4"><span>Step 1</span> : Data preparation</h2>
+
+                                <p>We retrieve the MNIST dataset, which contains images of handwritten digits. The training and test data are combined to simplify manipulation. For resource reasons, we limit the number of samples to 5000.</p>
+
+                                <p> Images are prepared for model training by adjusting their format and size. You can see elements of the MNIST database on the associated image</p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="link" class="front-product">
+                <div class="container-fluid p-0">
+                    <div class="row align-items-center">
+
+                        <div class="col-lg-6 col-12">
+                            <img src="images\OCR\Transfer+learning.png" class="img-fluid" alt="">
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                            <div class="px-5 py-5 py-lg-0">
+                                <h2 class="mb-4"><span>Step 2 </span> : []</h2>
+
+                                <p class="lead mb-4">Given that training a high-performance CNN (with a large number of layers) requires considerable computing power, we opted for transfer learning. But what is transfer learning? </p>
+
+                                <p class="lead mb-4">Transfer learning is a machine learning technique where a pre-trained model is used as a starting point for a new task, typically with a different dataset. It involves fine-tuning the pre-trained model's parameters on the new data, leveraging the knowledge it gained from its original task to improve performance on the new task. This approach is particularly useful when labeled data is limited or when training a model from scratch would be computationally expensive, allowing for faster and more efficient development of models for various tasks.</p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="link" class="front-product">
+                <div class="container-fluid p-0">
+                    <div class="row align-items-center">
+
+                        <div class="col-lg-6 col-12">
+                            <img src="images\OCR\imagenet_banner.jpeg" class="img-fluid" alt="">
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                            <div class="px-5 py-5 py-lg-0">
+                                <h2 class="mb-4"><span>VGG16</span></h2>
+
+                                <p class="lead mb-4">In our case, we'll use the VGG16 model for transfer learning. The VGG-16 model is a convolutional neural network (CNN) architecture that was proposed by the Visual Geometry Group (VGG) at the University of Oxford. It is characterized by its depth, consisting of 16 layers, including 13 convolutional layers and 3 fully connected layers. VGG-16 is renowned for its simplicity and effectiveness, as well as its ability to achieve strong performance on various computer vision tasks, including image classification and object recognition. The model’s architecture features a stack of convolutional layers followed by max-pooling layers, with progressively increasing depth. This design enables the model to learn intricate hierarchical representations of visual features, leading to robust and accurate predictions. Despite its simplicity compared to more recent architectures, VGG-16 remains a popular choice for many deep learning applications due to its versatility and excellent performance.
+
+                                    The ImageNet Large Scale Visual Recognition Challenge (ILSVRC) is an annual competition in computer vision where teams tackle tasks including object localization and image classification. VGG16, proposed by Karen Simonyan and Andrew Zisserman in 2014, achieved top ranks in both tasks, detecting objects from 200 classes and classifying images into 1000 categories.</p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section class="testimonial section-padding">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-9 mx-auto col-11">
+                            <h2 class="text-center">Customer love, <br> <span>Little</span> Fashion</h2>
+
+                            <div class="slick-testimonial">
+                                <div class="slick-testimonial-caption">
+                                    <p class="lead">Over three years in business, We’ve had the chance to work on a variety of projects, with companies Lorem ipsum dolor sit amet</p>
+
+                                    <div class="slick-testimonial-client d-flex align-items-center mt-4">
+                                        <img src="images/people/senior-man-wearing-white-face-mask-covid-19-campaign-with-design-space.jpeg" class="img-fluid custom-circle-image me-3" alt="">
+
+                                        <span>George, <strong class="text-muted">Digital Art Fashion</strong></span>
+                                    </div>
+                                </div>
+
+                                <div class="slick-testimonial-caption">
+                                    <p class="lead">Over three years in business, We’ve had the chance to work on a variety of projects, with companies Lorem ipsum dolor sit amet</p>
+
+                                    <div class="slick-testimonial-client d-flex align-items-center mt-4">
+                                        <img src="images/people/beautiful-woman-face-portrait-brown-background.jpeg" class="img-fluid custom-circle-image me-3" alt="">
+
+                                        <span>Sandar, <strong class="text-muted">Zoom Fashion Idea</strong></span>
+                                    </div>
+                                </div>
+
+                                <div class="slick-testimonial-caption">
+                                    <p class="lead">Over three years in business, We’ve had the chance to work on a variety of projects, with companies Lorem ipsum dolor sit amet</p>
+
+                                    <div class="slick-testimonial-client d-flex align-items-center mt-4">
+                                        <img src="images/people/portrait-british-woman.jpeg" class="img-fluid custom-circle-image me-3" alt="">
+
+                                        <span>Marie, <strong class="text-muted">Art Fashion Design</strong></span>
+                                    </div>
+                                </div>
+
+                                <div class="slick-testimonial-caption">
+                                    <p class="lead">Over three years in business, We’ve had the chance to work on a variety of projects, with companies Lorem ipsum dolor sit amet</p>
+
+                                    <div class="slick-testimonial-client d-flex align-items-center mt-4">
+                                        <img src="images/people/woman-wearing-mask-face-closeup-covid-19-green-background.jpeg" class="img-fluid custom-circle-image me-3" alt="">
+
+                                        <span>Catherine, <strong class="text-muted">Dress Fashion</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-10 me-auto mb-4">
+                        <h4 class="text-white mb-3"><a href="index.html">Little</a> Fashion</h4>
+                        <p class="copyright-text text-muted mt-lg-5 mb-4 mb-lg-0">Copyright © 2022 <strong>Little Fashion</strong></p>
+                        <br>
+                        <p class="copyright-text">Designed by <a href="https://www.tooplate.com/" target="_blank">Tooplate</a></p>
+                    </div>
+
+                    <div class="col-lg-5 col-8">
+                        <h5 class="text-white mb-3">Sitemap</h5>
+
+                        <ul class="footer-menu d-flex flex-wrap">
+                            <li class="footer-menu-item"><a href="about.html" class="footer-menu-link">About</a></li>
+
+                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">Products</a></li>
+
+                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">Privacy policy</a></li>
+
+                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">FAQs</a></li>
+
+                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-4">
+                        <h5 class="text-white mb-3">Social</h5>
+
+                        <ul class="social-icon">
+
+                            <li><a href="#" class="social-icon-link bi-youtube"></a></li>
+
+                            <li><a href="#" class="social-icon-link bi-whatsapp"></a></li>
+
+                            <li><a href="#" class="social-icon-link bi-instagram"></a></li>
+
+                            <li><a href="#" class="social-icon-link bi-skype"></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/Headroom.js"></script>
+        <script src="js/jQuery.headroom.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/custom.js"></script>
+
+    </body>
+</html>
