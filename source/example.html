@@ -130,11 +130,11 @@ https://www.tooplate.com/view/2127-little-fashion
 
                         <div class="col-lg-6 col-12">
                             <div class="px-5 py-5 py-lg-0">
-                                <h2 class="mb-4"><span>Step 2 </span> : []</h2>
+                                <h2 class="mb-4"><span>Step 2 </span> : Loading VGG16 Model and updating it with Transfer Learning</h2>
 
-                                <p class="lead mb-4">Given that training a high-performance CNN (with a large number of layers) requires considerable computing power, we opted for transfer learning. But what is transfer learning? </p>
+                                <p>Firstly, we're getting the VGG16 neural network model. Process begin by setting up the input layer to accommodate images sized at (48px, 48px, 3) where 3 represent the dimension. Then, it loads the pre-trained VGG16 model with ImageNet weights, specifying the input layer.</p>
 
-                                <p class="lead mb-4">Transfer learning is a machine learning technique where a pre-trained model is used as a starting point for a new task, typically with a different dataset. It involves fine-tuning the pre-trained model's parameters on the new data, leveraging the knowledge it gained from its original task to improve performance on the new task. This approach is particularly useful when labeled data is limited or when training a model from scratch would be computationally expensive, allowing for faster and more efficient development of models for various tasks.</p>
+                                <p>Retrieving the output of VGG16's last layer, it adds a Flatten layer to extend the neural network. Additionnal dense layers are introduced for feature extraction and representation. For the final output, a dense layer with softmax activation for multi-class classification is appended. </p>
 
                             </div>
                         </div>
@@ -153,14 +153,15 @@ https://www.tooplate.com/view/2127-little-fashion
 
                         <div class="col-lg-6 col-12">
                             <div class="px-5 py-5 py-lg-0">
-                                <h2 class="mb-4"><span>VGG16</span></h2>
+                                <h2 class="mb-4"><span>Step 3</span> : Federated Learning Strategy with FedAvg: Decentralized Training and Server-side Iterations</h2>
 
-                                <p class="lead mb-4">In our case, we'll use the VGG16 model for transfer learning. The VGG-16 model is a convolutional neural network (CNN) architecture that was proposed by the Visual Geometry Group (VGG) at the University of Oxford. It is characterized by its depth, consisting of 16 layers, including 13 convolutional layers and 3 fully connected layers. VGG-16 is renowned for its simplicity and effectiveness, as well as its ability to achieve strong performance on various computer vision tasks, including image classification and object recognition. The model’s architecture features a stack of convolutional layers followed by max-pooling layers, with progressively increasing depth. This design enables the model to learn intricate hierarchical representations of visual features, leading to robust and accurate predictions. Despite its simplicity compared to more recent architectures, VGG-16 remains a popular choice for many deep learning applications due to its versatility and excellent performance.
-
-                                    The ImageNet Large Scale Visual Recognition Challenge (ILSVRC) is an annual competition in computer vision where teams tackle tasks including object localization and image classification. VGG16, proposed by Karen Simonyan and Andrew Zisserman in 2014, achieved top ranks in both tasks, detecting objects from 200 classes and classifying images into 1000 categories.</p>
+                                <p>Cette fonction configure une stratégie pour le Federated Learning, une méthode d'apprentissage machine distribué qui permet de former un modèle à partir de données décentralisées sans les centraliser.</p>
+                                <p>Avec la stratégie FedAvg, seuls un petit pourcentage des clients disponibles sont échantillonnés pour l'entraînement et l'évaluation du modèle à chaque itération côté serveur, ce qui garantit une participation équitable tout en préservant la confidentialité des données. Pendant chaque itération, les clients sélectionnés localement effectuent un certain nombre d'itérations d'apprentissage avec leurs données locales, puis envoient les mises à jour de leurs modèles au serveur central, où elles sont agrégées pour mettre à jour le modèle global.</p>
+                                <p>Cette approche permet d'améliorer progressivement le modèle global tout en minimisant la transmission de données sensibles vers un serveur central, ce qui est crucial dans des contextes où la confidentialité des données est une priorité.</p>
 
                             </div>
                         </div>
+                        <video src="images/example/AnimationM1.mp4" width="1280" height="720" controls ></video>
 
                     </div>
                 </div>
