@@ -120,6 +120,33 @@ https://www.tooplate.com/view/2127-little-fashion
                 </div>
             </section>
 
+
+            <section id="link" class="front-product">
+                <div class="container-fluid p-0">
+                    <div class="row align-items-center">
+
+                        <div class="col-lg-6 col-12">
+                            <img src="images/example/client_config.png" class="img-fluid" alt="">
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                            <div class="px-5 py-5 py-lg-0">
+                                
+                                <h2 class="mb-4"><span>Step 2</span> : Clients configuration</h2>
+
+                                <p>In parallel to the data preparation, we will configure 5 clients. A client can be considered as an entity that possesses data, and in our case, we will assume that each client has 1000 <strong>distinct</strong> data points: meaning that the data of client number 1 is not known by the other clients, and vice versa. In the case of our example, we will associate each segment of 1000 data points from the MNIST database respectively to each of the 5 clients.</p>
+
+                                <p> We will define a client which we will call the "global client". This client contains all the data from the 5 clients previously defined. In our case, it consists of the first 5000 data points from the MNIST dataset. We will need this client later on. It will serve as a comparison element.</p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+
             <section id="link" class="front-product">
                 <div class="container-fluid p-0">
                     <div class="row align-items-center">
@@ -155,9 +182,9 @@ https://www.tooplate.com/view/2127-little-fashion
                             <div class="px-5 py-5 py-lg-0">
                                 <h2 class="mb-4"><span>Step 3</span> : Federated Learning Strategy with FedAvg: Decentralized Training and Server-side Iterations</h2>
 
-                                <p>Cette fonction configure une stratégie pour le Federated Learning, une méthode d'apprentissage machine distribué qui permet de former un modèle à partir de données décentralisées sans les centraliser.</p>
-                                <p>Avec la stratégie FedAvg, seuls un petit pourcentage des clients disponibles sont échantillonnés pour l'entraînement et l'évaluation du modèle à chaque itération côté serveur, ce qui garantit une participation équitable tout en préservant la confidentialité des données. Pendant chaque itération, les clients sélectionnés localement effectuent un certain nombre d'itérations d'apprentissage avec leurs données locales, puis envoient les mises à jour de leurs modèles au serveur central, où elles sont agrégées pour mettre à jour le modèle global.</p>
-                                <p>Cette approche permet d'améliorer progressivement le modèle global tout en minimisant la transmission de données sensibles vers un serveur central, ce qui est crucial dans des contextes où la confidentialité des données est une priorité.</p>
+                                <p>This function configures a strategy for Federated Learning, a distributed machine learning method that enables training a model from decentralized data without centralizing it.</p>
+                                <p>With the FedAvg strategy, only a small percentage of available clients are sampled for training and evaluating the model at each server-side iteration, ensuring fair participation while preserving data privacy. During each iteration, locally selected clients perform a number of learning iterations with their local data, then send their model updates to the central server, where they are aggregated to update the global model.</p>
+                                <p>This approach progressively improves the global model while minimizing the transmission of sensitive data to a central server, which is crucial in contexts where data privacy is a priority.</p>
                             </div>
                         </div>
                         
